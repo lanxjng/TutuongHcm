@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html id='html' onmousedown="mouseDown()" onmouseup="mouseUp()" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP 1 THẾ GIỚI</title>
+    <link rel="stylesheet" href="font/font1.css">
+    <link rel="stylesheet" href="font/font2.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+    <link rel="stylesheet" type="" href="css/xoay.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+</head>
+<audio id="emthich" src="mp3/gainhat.mp3"></audio>
+<audio id='bommp3'>
+    <source src="mp3/bommp3.mp3">
+</audio>
+
+<body id="body" onmousedown="mouseDownBody('emthich',74000)" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+    <!-- phần trên -->
+    <div class="head">
+        <!-- các menu -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logocovietnam.jpg" alt="logo"></a>
+        </div>
+        <div class="link">
+            <ol>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="gioithieu.html" style="color:#88fdab;">Giới Thiệu</a></li>
+                    <li><a href="noidung.html">Nội Dung</a></li>
+                    <li><a href="gameshow.html">Game</a></li>
+                </ul>
+            </ol>
+        </div>
+    </div>
+    <div id="center" class="center">
+        <marquee scrollamount="20"><i><img id='binhleft' width="100" src="images/matbinh.png" alt="">NGUYỄN GIA BÌNH - YÊU TẤT CẢ CÁC CHỊ NGÔN NGỮ ANH (NHỎ HƠN BA)...<img id="binhright" width="100" src="images/matbinh2.png" alt=""></i></marquee>
+        <div id="content" class="content">
+            <div id="bg" class="anh"></div>
+        </div>
+        <div class="mxh">
+            <ul class="social-share">
+                <li onclick="gotofb()" id="fb" class="social-item social-item--facebook">
+                    <i class="fab fa-facebook-square"></i>
+                </li>
+                <li id="twitter" class="social-item social-item--twitter">
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li id="tele" class="social-item social-item--telegram">
+                    <i class="fab fa-telegram"></i>
+                </li>
+                <li id="linkedin" class="social-item social-item--linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </li>
+                <li id="instagram" class="social-item social-item--instagram">
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li id="gg" class="social-item social-item--google">
+                    <i class="fab fa-google"></i>
+                </li>
+                <li id="yt" class="social-item social-item--youtube">
+                    <i class="fab fa-youtube"></i>
+            </ul>
+        </div>
+        <div class="chuongthongbao" onclick="showmess()">
+            <div class="bell-noti">
+                <i class="fa fa-bell bell-noti-icon"></i>
+                <div class="bell-noti-status"></div>
+            </div>
+        </div>
+        <div class="btn">
+            <img onclick="prev()" id="left" width="50" src="images/left-chevron.png" alt="">
+            <img onclick="next()" id="right" width="50" src="images/right-chevron.png" alt="">
+        </div>
+        <div class="textshow">
+            <h1 id="textshow"></h1>
+        </div>
+        <div class="line-loading"></div>
+        <div class="time">
+            <ul class="countdown">
+                <li class="countdown-item"><span id="hour" class="countdown-number hours"></span></li>
+                <li class="countdown-item"><span id="padding" class="countdown-number padding">:</span></li>
+                <li class="countdown-item"><span id="minute" class="countdown-number minutes"></span></li>
+                <li class="countdown-item"><span id="padding" class="countdown-number padding">:</span></li>
+                <li class="countdown-item"><span id="second" class="countdown-number second"></span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/bommouse.js"></script>
+    <script src="js/min.js"></script>
+    <script src="js/nhacnen.js"></script>
+    <script src="js/phaohoa2.js"></script>
+    <script src="js/loadanh.js"></script>
+    <script src="js/time.js"></script>
+    <!-- <script src="js/nonstop.js"></script> -->
+    <script>
+        function showmess() {
+            alert("ANH BÌNH YÊU TẤT CẢ CÁC CHỊ NGÔN NGỮ ANH ❤");
+        }
+
+        function gotofb() {
+            window.location.href = 'https://facebook.com/100029031824085';
+        }
+    </script>
+</body>
+
+</html>

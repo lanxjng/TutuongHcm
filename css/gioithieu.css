@@ -1,0 +1,652 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to right bottom, #FE0C6B, #29055E);
+    position: fixed;
+}
+
+marquee {
+    position: absolute;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100%;
+    margin-top: -20px;
+    font-weight: bold;
+    text-shadow: rgb(0, 0, 233) -1px -2px 0.5em;
+    z-index: 2;
+}
+
+
+/*  các menu đầu trang  */
+
+.head {
+    /* background-image: linear-gradient( 135deg, rgba(0, 0, 0, 0.7), rgba(253, 240, 55, 0.7)); */
+    background-image: linear-gradient( to right, #5dcff1, #6b12df);
+    width: 100%;
+    height: 7%;
+    margin: auto;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    height: 100%;
+    width: 13%;
+    animation-name: chuyendong;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.logo a {
+    width: 100%;
+    height: 100%;
+}
+
+.logo a img {
+    width: 50%;
+    height: 100%;
+}
+
+.link {
+    width: 40%;
+    float: right;
+    margin-left: 35%;
+    animation-name: chuyendong2;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url('images/bommouse.png'), auto;
+}
+
+.link ol ul li {
+    display: inline-block;
+    cursor: url('images/bommouse.png'), auto;
+}
+
+.link ol ul li a {
+    cursor: url('images/bommouse.png'), auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link ol ul li :hover {
+    color: #88fdab;
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    transition: 0.5s;
+    font-size: 23px;
+    background: rgb(27, 0, 0) -webkit-gradient(linear, left top, right top, from(#e7ff0f), to(rgb(229, 255, 0)), color-stop(.7, #ff0505), color-stop(.9, rgb(255, 255, 255))) 0 0 no-repeat;
+    -webkit-background-clip: text;
+    -webkit-background-size: 100%;
+    color: rgba(44, 180, 67, 0.1);
+}
+
+.link ol ul li a:active {
+    font-size: 14px;
+}
+
+
+/* background trang */
+
+.center {
+    background: url(../images/bien.jpg);
+    /* background-image: linear-gradient( to right bottom, #FE0C6B, #29055E); */
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    animation-delay: 2s;
+    animation-name: lammo;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* padding-top: 15%; */
+}
+
+.anh {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    display: flex;
+    width: 60%;
+    height: 60%;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* margin: auto; */
+    border-radius: 50px;
+    z-index: 1;
+    transition: all 2s;
+}
+
+.anh:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: inherit;
+    animation: fade 3s infinite linear;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+@keyframes fade {
+    to {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+
+/* ==========binh ======= */
+
+#binhleft {
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+}
+
+#binhleft,
+#binhright {
+    animation: nhipdap 0.5s ease infinite;
+    margin-bottom: -10px;
+}
+
+
+/* =========button next prev ========== */
+
+.btn {
+    width: 100%;
+}
+
+.btn img {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.btn #left {
+    position: absolute;
+    left: 10%;
+}
+
+.btn #right {
+    position: absolute;
+    right: 10%;
+}
+
+
+/* =========show text info===== */
+
+.textshow {
+    width: 50%;
+    transition: all 2s;
+}
+
+.textshow h1 {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    transition: all 2s;
+    font-size: 55px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* =========loading===== */
+
+.line-loading {
+    width: 100%;
+    height: 0.5rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 7%;
+}
+
+.line-loading:before {
+    content: "";
+    position: absolute;
+    right: auto;
+    left: 0;
+    height: 100%;
+    background-color: var(--primary);
+    animation: lineLoading 1s forwards infinite linear;
+}
+
+@keyframes lineLoading {
+    0% {
+        right: 100%;
+    }
+    50% {
+        right: 0;
+        left: 0;
+    }
+    100% {
+        right: 0;
+        left: 100%;
+    }
+}
+
+
+/* ======================= thoi gian=== */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    padding: 0.55rem 0;
+    /* background-color: #000000; */
+    background-image: linear-gradient( to right, #970071, #0163f7);
+    color: white;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 5px;
+    width: 50%;
+}
+
+.countdown-number {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.time {
+    position: absolute;
+    bottom: 0%;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+ :root {
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: var(--font);
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.social-share {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.social-item--facebook {
+    background-color: #3b5999;
+}
+
+.social-item--twitter {
+    background-color: #55acee;
+}
+
+.social-item--telegram {
+    background-color: #0077b5;
+}
+
+.social-item--linkedin {
+    background-color: #007ee5;
+}
+
+.social-item--instagram {
+    background-color: #ff009d;
+}
+
+.social-item--google {
+    background-color: #000000;
+}
+
+.social-item--youtube {
+    background-color: #ff0000;
+}
+
+.mxh {
+    position: absolute;
+    bottom: 0%;
+    font-size: 15px;
+    right: 0%;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.mxh ul li:hover {
+    margin-top: -10px;
+    transition: 0.25s;
+}
+
+.bell-noti {
+    font-size: 2.5rem;
+    color: #ccc;
+    position: relative;
+    display: inline-block;
+}
+
+.bell-noti-icon {
+    animation: ring 0.25s forwards alternate infinite linear;
+}
+
+.bell-noti-status {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: var(--secondary);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@keyframes ring {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+.chuongthongbao {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+
+/* ============ keyframe========== */
+
+
+/* ===nhip dap=== */
+
+@keyframes nhipdap {
+    85% {
+        transform: scale(.8, .8);
+    }
+    100% {
+        transform: scale(1.8, 1.8);
+    }
+}
+
+@keyframes nhiptimdap {
+    96% {
+        transform: translate(-50%, -30%) scale(.8, .8);
+    }
+    100% {
+        transform: translate(-50%, -30%) scale(1, 1);
+    }
+}
+
+
+/* ====tia set== */
+
+@keyframes tiaset {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* === background== */
+
+@keyframes doimaubg {
+    0% {
+        background-image: linear-gradient( 135deg, rgba(161, 238, 193, 0.7), rgba(63, 90, 212, 0.7)), url(../images/bien.jpg);
+    }
+    50% {
+        background-image: linear-gradient( 135deg, rgba(230, 70, 144, 0.7), rgba(32, 31, 7, 0.7)), url(../images/bien.jpg);
+    }
+    100% {
+        background-image: linear-gradient( 135deg, rgba(253, 234, 234, 0.7), rgba(213, 224, 60, 0.7)), url(../images/bien.jpg);
+    }
+}
+
+
+/* == bac ho== */
+
+@keyframes bacho {
+    0% {
+        opacity: 0.1;
+        transform: scale(10);
+    }
+    90% {
+        opacity: 0.6;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* làm mờ */
+
+@keyframes lammo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* chuyển động */
+
+@keyframes chuyendong {
+    0% {
+        opacity: 0.5;
+        transform: translate(3000px, 0);
+    }
+    95% {
+        opacity: 0.6;
+        transform: translate(-300px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* lắc lư */
+
+@keyframes laclu {
+    0% {
+        transform: translate(-3px, 0);
+    }
+    10% {
+        transform: translate(3px, 0);
+    }
+    20% {
+        transform: translate(-3px, 0);
+    }
+    30% {
+        transform: translate(3px, 0);
+    }
+    40% {
+        transform: translate(-3px, 0);
+    }
+    50% {
+        transform: translate(3px, 0);
+    }
+    60% {
+        transform: translate(-3px, 0);
+    }
+    70% {
+        transform: translate(3px, 0);
+    }
+    80% {
+        transform: translate(-3px, 0);
+    }
+    90% {
+        transform: translate(3px, 0);
+    }
+    100% {
+        transform: translate(-3px, 0);
+    }
+}
+
+
+/* chuyển động 2 bên */
+
+@keyframes chuyendong2 {
+    0% {
+        opacity: 0.5;
+        transform: translate(-3000px, 0);
+    }
+    95% {
+        opacity: 0.6;
+        transform: translate(500px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* chuyển động rơi từ trên xuống */
+
+@keyframes roixuong {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, -3000px);
+    }
+    95% {
+        opacity: 0.6;
+        transform: translate(0, 500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* chuyển động rơi từ dưới lên */
+
+@keyframes roixuong2 {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, -300px);
+    }
+    90% {
+        opacity: 0.6;
+        transform: translate(0, 500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/*  nhấp nháy viền */
+
+@keyframes nhapnhay {
+    25% {
+        border-top: 5px solid rgb(133, 221, 17);
+    }
+    50% {
+        border-right: 5px solid rgb(14, 114, 207);
+    }
+    75% {
+        border-bottom: 5px solid rgb(236, 166, 101);
+    }
+    100% {
+        border-left: 5px solid rgb(233, 21, 67);
+    }
+}
+
+
+/* nghiêng chữ */
+
+@keyframes nghiengchu {
+    0% {
+        transform: rotate(-360deg);
+    }
+    85% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

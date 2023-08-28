@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html id='html' onmousedown="mouseDown()" onmouseup="mouseUp()" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP 1 THẾ GIỚI</title>
+    <link rel="stylesheet" href="font/font1.css">
+    <link rel="stylesheet" href="font/font2.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="" href="css/xoay.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+</head>
+<audio id="nhacnen" src="mp3/quocca.mp3"></audio>
+<audio id='bommp3'>
+    <source src="mp3/bommp3.mp3">
+</audio>
+<audio id='penta'>
+    <source src="mp3/penta.mp3">
+</audio>
+
+<body id="body" onmousedown="mouseDownBody('nhacnen',81000)" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+    <!-- phần trên -->
+    <div class="head">
+        <!-- các menu -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logocovietnam.jpg" alt="l ogo"></a>
+        </div>
+        <div class="link">
+            <ol>
+                <ul>
+                    <li><a href="index.html" style="color:#88fdab;">Trang Chủ</a></li>
+                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="noidung.html">Nội Dung</a></li>
+                    <li><a href="gameshow.html">Game</a></li>
+                </ul>
+            </ol>
+        </div>
+    </div>
+    <div id="center" class="center">
+        <marquee scrollamount="20"><i>08D-CNTT1 TOP 1 THẾ GIỚI, XIN CHÀO CÁC BẠN!!!</i></marquee>
+        <div id="content" class="content">
+            <div id="container">
+                <div id="stage">
+                    <div onclick="toggleShape()" id="shape" class="cube backfaces">
+                        <div class="plane one"></div>
+                        <div class="plane two"></div>
+                        <div class="plane three"></div>
+                        <div class="plane four"></div>
+                        <div class="plane five"></div>
+                        <div class="plane six"></div>
+                        <div class="plane seven"></div>
+                        <div class="plane eight"></div>
+                        <div class="plane nine"></div>
+                        <div class="plane ten"></div>
+                        <div class="plane eleven"></div>
+                        <div class="plane twelve"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="tiaset" class="tiaset">
+                <img id="set1" src="images/tiaset.png" alt="">
+                <img id="set2" src="images/tiaset.png" alt="">
+            </div>
+            <div id="nuoc" class="nuoc">
+                <img id="tq" src="images/kethu/tq.png" alt="">
+                <img id="nhat" src="images/kethu/nhat.png" alt="">
+                <img id="phap" src="images/kethu/phap.png" alt="">
+                <img id="my" src="images/kethu/my.png" alt="">
+            </div>
+        </div>
+        <div class="text1">
+            <h1 id="text">Hồ Chí Minh (19/5/1890 – 2/9/1969)<br>Tên khai sinh: Nguyễn Sinh Cung <br>Là một nhà cách mạng và chính khách người Việt Nam.
+                <br> Ông là người sáng lập ra Đảng Cộng sản Việt Nam, từng là Thủ tướng Việt Nam Dân chủ Cộng hòa trong những năm 1945–1955, Chủ tịch nước kiêm chủ tịch Đảng Lao động Việt Nam từ năm 1951 đến khi qua đời (1969).</h1>
+        </div>
+        <div class="text2">
+            <h1 id="text">Trong toàn bộ quá trình diễn ra của chiến tranh Việt Nam, Hồ Chí Minh là nhân vật chủ chốt trong hàng ngũ lãnh đạo của Việt Nam Dân chủ Cộng hòa và Mặt trận Dân tộc Giải phóng miền Nam Việt Nam.
+                <br>Năm 1975, Việt Nam Dân chủ Cộng hòa chiến thắng, hai miền Việt Nam được thống nhất, dẫn đến sự ra đời của nhà nước Cộng hòa Xã hội chủ nghĩa Việt Nam.</h1>
+        </div>
+        <div class="text3">
+            <h1><i>Hoàng Sa, Trường Sa Là Của Việt Nam</i></h1>
+        </div>
+        <div class="mxh">
+            <ul class="social-share">
+                <li onclick="gotofb()" id="fb" class="social-item social-item--facebook">
+                    <i class="fab fa-facebook-square"></i>
+                </li>
+                <li id="twitter" class="social-item social-item--twitter">
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li id="tele" class="social-item social-item--telegram">
+                    <i class="fab fa-telegram"></i>
+                </li>
+                <li id="linkedin" class="social-item social-item--linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </li>
+                <li id="instagram" class="social-item social-item--instagram">
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li id="gg" class="social-item social-item--google">
+                    <i class="fab fa-google"></i>
+                </li>
+                <li id="yt" class="social-item social-item--youtube">
+                    <i class="fab fa-youtube"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="chuongthongbao" onclick="showmess()">
+            <div class="bell-noti">
+                <i class="fa fa-bell bell-noti-icon"></i>
+                <div class="bell-noti-status"></div>
+            </div>
+        </div>
+        <div class="hoasen">
+            <img src="images/hoasen.png" alt="">
+        </div>
+    </div>
+    <script src="js/bommouse.js"></script>
+    <script src="js/min.js"></script>
+    <script src="js/nhacnen.js"></script>
+    <script src="js/hieuungxoay.js"></script>
+    <script src="js/phaohoa.js"></script>
+    <script>
+        function showmess() {
+            alert("ANH BÌNH YÊU TẤT CẢ CÁC CHỊ NGÔN NGỮ ANH ❤");
+        }
+
+        function gotofb() {
+            window.location.href = 'https://facebook.com/100029031824085';
+        }
+    </script>
+</body>
+
+</html>

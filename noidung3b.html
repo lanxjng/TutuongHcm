@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html id='html' onmousedown="mouseDown()" onmouseup="mouseUp()" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP 1 THẾ GIỚI</title>
+    <link rel="stylesheet" href="font/font1.css">
+    <link rel="stylesheet" href="font/font2.css">
+    <link rel="stylesheet" href="css/noidung.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+</head>
+<audio id="emthich" src="mp3/gainhat.mp3"></audio>
+<audio id='bommp3'>
+    <source src="mp3/bommp3.mp3">
+</audio>
+
+<body id="body" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+    <!-- phần trên -->
+    <div class="head">
+        <!-- các menu -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logocovietnam.jpg" alt="logo"></a>
+        </div>
+        <div class="link">
+            <ol>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="noidung.html" style="color:#88fdab;">Nội Dung</a></li>
+                    <li><a href="gameshowc.html">Game</a></li>
+                </ul>
+            </ol>
+        </div>
+    </div>
+    <div id="noidung" class="noidung">
+        <div id="link" class="link2">
+            <ol>
+                <ul>
+                    <li><a href="noidung.html">Tư Tưởng HCM Về CNXH</a></li>
+                    <li><a href="noidung2a.html">Tư Tưởng HCM Về Xây Dựng CNXH Ở VN</a></li>
+                    <li><a href="noidung3a.html" style="color:#000000;">Tư Tưởng HCM Về Thời Kỳ Quá Độ Lên CNXH Ở VN</a></li>
+                </ul>
+            </ol>
+        </div>
+    </div>
+
+    <div id="center" class="center">
+
+        <div class="mxh">
+            <ul class="social-share">
+                <li onclick="gotofb()" id="fb" class="social-item social-item--facebook">
+                    <i class="fab fa-facebook-square"></i>
+                </li>
+                <li id="twitter" class="social-item social-item--twitter">
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li id="tele" class="social-item social-item--telegram">
+                    <i class="fab fa-telegram"></i>
+                </li>
+                <li id="linkedin" class="social-item social-item--linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </li>
+                <li id="instagram" class="social-item social-item--instagram">
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li id="gg" class="social-item social-item--google">
+                    <i class="fab fa-google"></i>
+                </li>
+                <li id="yt" class="social-item social-item--youtube">
+                    <i class="fab fa-youtube"></i>
+            </ul>
+        </div>
+        <div class="chuongthongbao" onclick="showmess()">
+            <div class="bell-noti">
+                <i class="fa fa-bell bell-noti-icon"></i>
+                <div class="bell-noti-status"></div>
+            </div>
+        </div>
+        <div class="time">
+            <ul class="countdown">
+                <li class="countdown-item"><span id="hour" class="countdown-number hours"></span></li>
+                <li class="countdown-item"><span id="padding" class="countdown-number padding">:</span></li>
+                <li class="countdown-item"><span id="minute" class="countdown-number minutes"></span></li>
+                <li class="countdown-item"><span id="padding" class="countdown-number padding">:</span></li>
+                <li class="countdown-item"><span id="second" class="countdown-number second"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content" class="content">
+        <div class="tieude">
+            <h1 style="margin-top: -50px;"><i>Một số nguyên tắc xây dựng CNXH trong thời kỳ quá độ.</i></h1>
+        </div>
+        <div class="text">
+            <div class="text-noidung">
+                <div id="classa" class="class1">
+                    <img src="images/imgnoidung/3b1.jpg" alt="">
+                    <div class="txt">
+                        <span><i><u>Thứ nhất, mọi tư tưởng, hành động phải được thực hiện trên nền tảng chủ nghĩa Mác – Lenin.
+                           </u></i></span>
+                        <br> <br>
+                        <ul>
+                            <li>HCM quan niệm chủ nghĩa Mac-Lenin là khoa học về cách mạng của quần chúng bị áp bức và bóc lột. Là khoa học về sự thắng lợi của CNXH ở tất cả các nước.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="classb" class="class2">
+
+                    <div class="txt">
+                        <span><i><u>Thứ hai, phải giữ vững độc lập dân tộc.</u></i>
+                        </span>
+                        <ul>
+                            <li>Toàn thể dân tộc VN quyết đem tất cả tinh thần và lực lượng, tính mạng và của cải để giữ vững quyền tự do và độc lập ấy.</li>
+                            <br>
+                            <li>Độc lập dân tộc là mục tiêu trước hết của mỗi dân tộc và là điều kiện tiên quyết để thực hiện CNXH.</li>
+                        </ul>
+                    </div>
+                    <img src="images/imgnoidung/3b2.jpg" alt="">
+                </div>
+                <div id="classa" class="class1">
+                    <img src="images/imgnoidung/3b3.jpg" alt="">
+                    <div class="txt">
+                        <span><i><u>Thứ ba, phải đoàn kết, học tập kinh nghiệm của các nước anh em.
+                           </u></i></span>
+                        <ul>
+                            <li>Cách mạng VN là một bộ phận của lực lượng hòa bình, dân chủ, XHCN trên thế giới.</li>
+                            <li>HCM khẳng định: "Ta không thể giống Liên Xô, vì Liên Xô có phong tục tập quán khác, có lịch sử địa lý khác... Ta có thể đi con đường khác để tiến lên CNXH".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="classb" class="class2">
+
+                    <div class="txt">
+                        <span><i><u>Thứ tư, xây phải đi đôi với chống.</u></i>
+                        </span>
+                        <ul>
+                            <li>Người căn dặn: "Đối với kẻ địch phải luôn tỉnh táo giữ vững lập trường quyết không vì hoàn cảnh hòa bình làm mất cảnh giác. Phải luôn sẵn sàng đập tan mọi âm mưu của kẻ địch, bảo vệ những thành quả của cách mạng, bảo vệ lao
+                                động hòa bình của nhân dân".</li>
+                            <li>Phải chống lại "căn bệnh" nghe những lời bình luận không đúng cũng làm thinh không biện bác... Ai nói sao, ai làm gì cũng mặc kệ".</li>
+                        </ul>
+                    </div>
+                    <img src="images/imgnoidung/3b4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="btnnoidung">
+            <ul>
+                <li>
+                    <a href="noidung3a.html"><button style="background-color:white;color: black;">A</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="noidung3b.html"><button >B</button>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="thanks">
+            <button onclick="byebye()">Thanks For Watching</button>
+        </div>
+        <video id='thanks' controls>
+            <source src="video/thank.mp4">
+        </video>
+    </div>
+    <button onclick="topFunction()" id="scrTop" title="Go to top">▲</button>
+    <script src="js/bommouse.js"></script>
+    <script src="js/min.js"></script>
+    <!-- <script src="js/loadanh.js"></script> -->
+    <script src="js/time.js"></script>
+    <script src="js/scrolltop.js"></script>
+    <script src="js/laroi.js"></script>
+    <script>
+        function showmess() {
+            alert("ANH BÌNH YÊU TẤT CẢ CÁC CHỊ NGÔN NGỮ ANH ❤");
+        }
+
+        function gotofb() {
+            window.location.href = 'https://facebook.com/100029031824085';
+        }
+
+        function byebye() {
+            var phim = document.getElementById("thanks");
+            // phim.style.display = 'block';
+            phim.play();
+            phim.requestFullscreen();
+        }
+    </script>
+</body>
+
+</html>

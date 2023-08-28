@@ -1,0 +1,738 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to right bottom, #FE0C6B, #29055E);
+    position: fixed;
+}
+
+marquee {
+    position: absolute;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: rgb(0, 0, 233) -1px -2px 0.5em;
+}
+
+
+/*  các menu đầu trang  */
+
+.head {
+    /* background-image: linear-gradient( 135deg, rgba(0, 0, 0, 0.7), rgba(253, 240, 55, 0.7)); */
+    background-image: linear-gradient( to right, #5dcff1, #6b12df);
+    width: 100%;
+    height: 7%;
+    margin: auto;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    height: 100%;
+    width: 13%;
+    animation-name: chuyendong;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.logo a {
+    width: 100%;
+    height: 100%;
+}
+
+.logo a img {
+    width: 50%;
+    height: 100%;
+}
+
+.link {
+    width: 40%;
+    float: right;
+    margin-left: 35%;
+    animation-name: chuyendong2;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url('images/bommouse.png'), auto;
+}
+
+.link ol ul li {
+    display: inline-block;
+    cursor: url('images/bommouse.png'), auto;
+}
+
+.link ol ul li a {
+    cursor: url('images/bommouse.png'), auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link ol ul li :hover {
+    color: #88fdab;
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    transition: 0.5s;
+    font-size: 23px;
+    background: rgb(27, 0, 0) -webkit-gradient(linear, left top, right top, from(#e7ff0f), to(rgb(229, 255, 0)), color-stop(.7, #ff0505), color-stop(.9, rgb(255, 255, 255))) 0 0 no-repeat;
+    -webkit-background-clip: text;
+    -webkit-background-size: 100%;
+    color: rgba(44, 180, 67, 0.1);
+}
+
+.link ol ul li a:active {
+    font-size: 14px;
+}
+
+
+/* background trang */
+
+.center {
+    background: url(../images/bien.jpg);
+    /* background: url(../images/bghoasen3.jpg); */
+    /* background-image: linear-gradient( to right bottom, #FE0C6B, #29055E); */
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: border-box;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* animation-delay: 2s;
+    animation-name: lammo;
+    animation-duration: 1s;
+    animation-iteration-count: initial; */
+    animation: changebg 15s infinite linear;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* padding-top: 15%; */
+}
+
+.content h1 {
+    width: 50%;
+    color: rgb(10, 0, 0);
+    font-size: 70px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    text-shadow: 5px 2px 4px rgb(255, 255, 255), 10px -20px 4px rgb(0, 0, 0);
+    animation-name: nghiengchu;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+.content h1 u {
+    width: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.content h1 i:hover {
+    color: rgb(125, 207, 255);
+    font-size: 80px;
+    transition: all 0.5s;
+}
+
+#container {
+    position: relative;
+    z-index: 2;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.text1 {
+    margin-left: 30px;
+}
+
+.text2 {
+    margin-right: 30px;
+    right: 0;
+}
+
+.text1,
+.text2 {
+    width: 30%;
+    height: 50%;
+    font-size: 12px;
+    position: absolute;
+    top: 30%;
+    font-family: pacifico;
+    z-index: 1;
+}
+
+.text3 {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    font-family: pacifico;
+    color: rgb(253, 0, 0);
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    background: rgb(27, 0, 0) -webkit-gradient(linear, left top, right top, from(#ff1900), to(rgb(15, 159, 255)), color-stop(.7, #5fffa2), color-stop(.9, #fff)) 0 0 no-repeat;
+    -webkit-background-clip: text;
+    -webkit-background-size: 100%;
+    color: rgba(44, 180, 67, 0.1);
+    animation: changecolor 15s infinite linear;
+}
+
+h1 {
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.nuoc {
+    display: none;
+}
+
+.nuoc img {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    bottom: 10%;
+    margin-left: 10%;
+    z-index: 6;
+}
+
+.nuoc #tq {
+    animation-name: huttq;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.nuoc #nhat {
+    left: 25%;
+    animation-name: hutnhat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.nuoc #phap {
+    left: 50%;
+    animation-name: hutphap;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.nuoc #my {
+    left: 75%;
+    animation-name: hutmy;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.tiaset {
+    display: none;
+}
+
+.tiaset img {
+    width: 400px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-40%, 50%);
+    z-index: 2;
+    animation-name: tiaset;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.tiaset #set2 {
+    margin-left: 100px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    top: 35%;
+    left: 30%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+ :root {
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: var(--font);
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.social-share {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.social-item--facebook {
+    background-color: #3b5999;
+}
+
+.social-item--twitter {
+    background-color: #55acee;
+}
+
+.social-item--telegram {
+    background-color: #0077b5;
+}
+
+.social-item--linkedin {
+    background-color: #007ee5;
+}
+
+.social-item--instagram {
+    background-color: #ff009d;
+}
+
+.social-item--google {
+    background-color: #000000;
+}
+
+.social-item--youtube {
+    background-color: #ff0000;
+}
+
+.mxh {
+    position: absolute;
+    bottom: 0%;
+    font-size: 15px;
+    right: 0%;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.mxh ul li:hover {
+    margin-top: -10px;
+    transition: 0.25s;
+}
+
+.bell-noti {
+    font-size: 2.5rem;
+    color: #ccc;
+    position: relative;
+    display: inline-block;
+}
+
+.bell-noti-icon {
+    animation: ring 0.25s forwards alternate infinite linear;
+}
+
+.bell-noti-status {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: var(--secondary);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@keyframes ring {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+.chuongthongbao {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.hoasen {
+    position: absolute;
+    bottom: 0%;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.hoasen img {
+    max-width: 150px;
+}
+
+
+/* ============ keyframe========== */
+
+
+/* ===== change color h1==== */
+
+
+/* === change background== */
+
+@keyframes changecolor {
+    0% {
+        background: rgb(27, 0, 0) -webkit-gradient(linear, left top, right top, from(#2b5af3), to(rgb(15, 201, 30)), color-stop(.7, #f886cc), color-stop(.9, rgb(255, 255, 255))) 0 0 no-repeat;
+        -webkit-background-clip: text;
+        -webkit-background-size: 100%;
+        transition: all 3s;
+    }
+    35% {
+        background: rgb(27, 0, 0) -webkit-gradient(linear, left top, right top, from(#48ff00), to(rgb(15, 159, 255)), color-stop(.7, #ffffff), color-stop(.9, rgb(255, 0, 0))) 0 0 no-repeat;
+        -webkit-background-clip: text;
+        -webkit-background-size: 100%;
+        transition: all 3s;
+    }
+    55% {
+        background: rgb(27, 0, 0) -webkit-gradient(linear, left top, right top, from(#ffffff), to(rgb(15, 159, 255)), color-stop(.7, #04ff6d), color-stop(.9, rgb(226, 250, 6))) 0 0 no-repeat;
+        -webkit-background-clip: text;
+        -webkit-background-size: 100%;
+        transition: all 3s;
+    }
+    75% {
+        background: rgb(27, 0, 0) -webkit-gradient(linear, left top, right top, from(#dbff11), to(rgb(255, 0, 119)), color-stop(.7, #ff18ec), color-stop(.9, #fff)) 0 0 no-repeat;
+        -webkit-background-clip: text;
+        -webkit-background-size: 100%;
+        transition: all 3s;
+    }
+}
+
+@keyframes changebg {
+    0% {
+        background-image: url(../images/bien.jpg);
+    }
+    35% {
+        background-image: url(../images/bghoasen.jpg);
+    }
+    55% {
+        background-image: url(../images/bien2.jpg);
+    }
+    75% {
+        background-image: url(../images/bghoasen4.jpg);
+    }
+}
+
+
+/* ====tia set== */
+
+@keyframes tiaset {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ====hut co=== */
+
+@keyframes huttq {
+    0% {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+        left: 25%;
+        top: 80%;
+    }
+    100% {
+        opacity: 0.1;
+        left: 35%;
+        top: 40%;
+    }
+}
+
+@keyframes hutphap {
+    50% {
+        opacity: 1;
+        left: 45%;
+        top: 80%;
+    }
+    100% {
+        opacity: 0.1;
+        top: 40%;
+        left: 35%;
+    }
+}
+
+@keyframes hutnhat {
+    50% {
+        opacity: 1;
+        left: 30%;
+        top: 80%;
+    }
+    100% {
+        opacity: 0.1;
+        top: 40%;
+        left: 35%;
+    }
+}
+
+@keyframes hutmy {
+    0% {
+        opacity: 0;
+        right: 0%;
+    }
+    50% {
+        opacity: 1;
+        left: 38%;
+        top: 80%;
+    }
+    100% {
+        opacity: 0.1;
+        top: 40%;
+        left: 35%;
+    }
+}
+
+
+/* === background== */
+
+@keyframes doimaubg {
+    0% {
+        background-image: linear-gradient( 135deg, rgba(161, 238, 193, 0.7), rgba(63, 90, 212, 0.7)), url(../images/bien.jpg);
+    }
+    50% {
+        background-image: linear-gradient( 135deg, rgba(230, 70, 144, 0.7), rgba(32, 31, 7, 0.7)), url(../images/bien.jpg);
+    }
+    100% {
+        background-image: linear-gradient( 135deg, rgba(253, 234, 234, 0.7), rgba(213, 224, 60, 0.7)), url(../images/bien.jpg);
+    }
+}
+
+
+/* == bac ho== */
+
+@keyframes bacho {
+    0% {
+        opacity: 0.1;
+        transform: scale(10);
+    }
+    90% {
+        opacity: 0.6;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* làm mờ */
+
+@keyframes lammo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* chuyển động */
+
+@keyframes chuyendong {
+    0% {
+        opacity: 0.5;
+        transform: translate(3000px, 0);
+    }
+    95% {
+        opacity: 0.6;
+        transform: translate(-300px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* lắc lư */
+
+@keyframes laclu {
+    0% {
+        transform: translate(-3px, 0);
+    }
+    10% {
+        transform: translate(3px, 0);
+    }
+    20% {
+        transform: translate(-3px, 0);
+    }
+    30% {
+        transform: translate(3px, 0);
+    }
+    40% {
+        transform: translate(-3px, 0);
+    }
+    50% {
+        transform: translate(3px, 0);
+    }
+    60% {
+        transform: translate(-3px, 0);
+    }
+    70% {
+        transform: translate(3px, 0);
+    }
+    80% {
+        transform: translate(-3px, 0);
+    }
+    90% {
+        transform: translate(3px, 0);
+    }
+    100% {
+        transform: translate(-3px, 0);
+    }
+}
+
+
+/* chuyển động 2 bên */
+
+@keyframes chuyendong2 {
+    0% {
+        opacity: 0.5;
+        transform: translate(-3000px, 0);
+    }
+    95% {
+        opacity: 0.6;
+        transform: translate(500px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* chuyển động rơi từ trên xuống */
+
+@keyframes roixuong {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, -3000px);
+    }
+    95% {
+        opacity: 0.6;
+        transform: translate(0, 500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* chuyển động rơi từ dưới lên */
+
+@keyframes roixuong2 {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, -300px);
+    }
+    90% {
+        opacity: 0.6;
+        transform: translate(0, 500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/*  nhấp nháy viền */
+
+@keyframes nhapnhay {
+    25% {
+        border-top: 5px solid rgb(133, 221, 17);
+    }
+    50% {
+        border-right: 5px solid rgb(14, 114, 207);
+    }
+    75% {
+        border-bottom: 5px solid rgb(236, 166, 101);
+    }
+    100% {
+        border-left: 5px solid rgb(233, 21, 67);
+    }
+}
+
+
+/* nghiêng chữ */
+
+@keyframes nghiengchu {
+    0% {
+        transform: rotate(-360deg);
+    }
+    85% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

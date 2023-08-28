@@ -1,0 +1,849 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient( to right top, #d105af, #927fe4); */
+    /* background: url(../images/background.jpg); */
+    background: url(../images/bgr4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: pacifico;
+}
+
+marquee {
+    position: absolute;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100%;
+    margin-top: -20px;
+    font-weight: bold;
+    text-shadow: rgb(0, 0, 233) -1px -2px 0.5em;
+    z-index: 2;
+}
+
+
+/*  các menu đầu trang  */
+
+.head {
+    /* background-image: linear-gradient( 135deg, rgba(0, 0, 0, 0.7), rgba(253, 240, 55, 0.7)); */
+    background-image: linear-gradient( to right, #5dcff1, #6b12df);
+    width: 100%;
+    height: 7%;
+    margin: auto;
+    display: flex;
+}
+
+.logo {
+    float: left;
+    height: 100%;
+    width: 13%;
+    animation-name: chuyendong;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.logo a {
+    width: 100%;
+    height: 100%;
+}
+
+.logo a img {
+    width: 50%;
+    height: 100%;
+}
+
+.link {
+    width: 40%;
+    float: right;
+    margin-left: 35%;
+    animation-name: chuyendong2;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link ol ul li {
+    display: inline-block;
+}
+
+.link ol ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link ol ul li :hover {
+    color: #88fdab;
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    transition: 0.5s;
+    font-size: 23px;
+    background: rgb(27, 0, 0) -webkit-gradient(linear, left top, right top, from(#e7ff0f), to(rgb(229, 255, 0)), color-stop(.7, #ff0505), color-stop(.9, rgb(255, 255, 255))) 0 0 no-repeat;
+    -webkit-background-clip: text;
+    -webkit-background-size: 100%;
+    color: rgba(44, 180, 67, 0.1);
+}
+
+.link ol ul li a:active {
+    font-size: 14px;
+}
+
+
+/* =====link cac noi dung ====== */
+
+.noidung .link2 {
+    padding: 15px 0;
+    height: 7%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: roixuong;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.noidung .link2 ol ul li {
+    display: inline-block;
+    /* animation-name: roixuong;
+    animation-duration: 3s;
+    animation-iteration-count: initial; */
+}
+
+.link2 ol ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.link2 ol ul li :hover {
+    color: #000000;
+    /* background-color: white; */
+    background-image: linear-gradient( 135deg, #f30cf3, #00c3ff);
+    transition: 0.5s;
+    border-radius: 50px;
+    padding: 15px 20px;
+    border-bottom: 4px rgb(2, 0, 0) solid;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.content .tieude {
+    margin-left: 10px;
+    width: 5%;
+    height: 86%;
+    display: inline-block;
+    position: fixed;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.content .tieude h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 1000;
+}
+
+.content .text {
+    width: 95%;
+    float: right;
+}
+
+#classa,
+#classb {
+    /* border-bottom: rgb(94, 93, 93) 3px solid; */
+    padding-bottom: 30px;
+}
+
+.text-noidung img {
+    border-radius: 30px;
+}
+
+.text-noidung #classa {
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+}
+
+.text-noidung #classa img {
+    float: left;
+    width: 40%;
+    display: flex;
+    animation-name: chuyendong;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    margin-left: 60px;
+}
+
+img:hover,
+.txt:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.btnnoidung li button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.15);
+    transition: 0.3s;
+}
+
+.text-noidung #classa .txt {
+    float: right;
+    width: 50%;
+    font-size: 30px;
+    padding-right: 60px;
+    animation-name: chuyendong2;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.text-noidung #classa .txt ul li {
+    /* float: right; */
+    width: 100%;
+    font-size: 25px;
+}
+
+.text-noidung #classb {
+    width: 100%;
+    float: left;
+}
+
+.text-noidung #classb img {
+    float: right;
+    width: 40%;
+    margin-right: 60px;
+    display: flex;
+    animation-name: chuyendong2;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.text-noidung #classb .txt {
+    padding-left: 60px;
+    float: left;
+    width: 50%;
+    font-size: 25px;
+    animation-name: chuyendong;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    color: #000000;
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0); */
+}
+
+.text-noidung #classa .txt ul li {
+    width: 100%;
+    font-size: 25px;
+}
+
+.btnnoidung {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.btnnoidung ul li {
+    display: inline-block;
+}
+
+.btnnoidung ul li button {
+    width: 50px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+}
+
+#scrTop {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 8%;
+    right: 5px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: goldenrod;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#scrTop:hover {
+    background-color: #555;
+}
+
+
+/* .text h2 ul li {
+    list-style-type: circle;
+} */
+
+
+/* ======================= thoi gian=== */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+    /* background-color: #000000; */
+    background-image: linear-gradient( to right, #970071, #0163f7);
+    color: white;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 5px;
+    width: 50%;
+}
+
+.countdown-number {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.time {
+    position: absolute;
+    bottom: 0%;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    position: fixed;
+    z-index: 2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+ :root {
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: var(--font);
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.social-share {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.social-item--facebook {
+    background-color: #3b5999;
+}
+
+.social-item--twitter {
+    background-color: #55acee;
+}
+
+.social-item--telegram {
+    background-color: #0077b5;
+}
+
+.social-item--linkedin {
+    background-color: #007ee5;
+}
+
+.social-item--instagram {
+    background-color: #ff009d;
+}
+
+.social-item--google {
+    background-color: #000000;
+}
+
+.social-item--youtube {
+    background-color: #ff0000;
+}
+
+.mxh {
+    position: absolute;
+    bottom: 0%;
+    font-size: 15px;
+    right: 0%;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    position: fixed;
+    z-index: 2;
+}
+
+.mxh ul li:hover {
+    margin-top: -10px;
+    transition: 0.25s;
+}
+
+.bell-noti {
+    font-size: 2.5rem;
+    color: rgb(204, 204, 204);
+    position: relative;
+    display: inline-block;
+}
+
+.bell-noti-icon {
+    animation: ring 0.25s forwards alternate infinite linear;
+}
+
+.bell-noti-status {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: var(--secondary);
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+@keyframes ring {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+.chuongthongbao {
+    position: absolute;
+    top: -1%;
+    right: 3%;
+    animation-name: bacho;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    position: fixed;
+    z-index: 6;
+}
+
+
+/* =========gameshow========= */
+
+.games {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+.games .game {
+    padding: 15px 0;
+    height: 7%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: roixuong;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.games .game ol ul li {
+    display: inline-block;
+    /* animation-name: roixuong;
+    animation-duration: 3s;
+    animation-iteration-count: initial; */
+}
+
+.game ol ul li button {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 50px;
+    margin-left: 55px;
+    padding: 70px;
+    font-family: pacifico;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.game ol ul li button:hover {
+    transform: scale(1.2);
+    transition: all 0.25s;
+}
+
+
+/* ====dialog=== */
+
+#dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 60%;
+    height: 70%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    display: none;
+}
+
+.dialogs .game ol ul li {
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+.dialogs .game ol ul li button {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 55px;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    font-family: pacifico;
+    font-weight: bold;
+}
+
+.dialogs .game ol ul li span {
+    font-size: 30px;
+}
+
+#dialog #exit {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    right: 0;
+}
+
+#cauhoi {
+    padding-top: 35px;
+    color: white;
+}
+
+.dung {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    display: none;
+}
+
+.dung img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.dung h1 {
+    margin-top: 65%;
+    font-size: 35px;
+    color: white;
+}
+
+.sai {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.sai img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    border-radius: 30px;
+}
+
+.sai h1 {
+    margin-top: 120%;
+    font-size: 35px;
+    color: white;
+}
+
+.thanks {
+    z-index: 15;
+    border-radius: 30px;
+    margin-left: 250px;
+    padding-bottom: 20px;
+}
+
+.thanks button {
+    z-index: 15;
+    padding: 10px;
+    border-radius: 30px;
+    background-image: linear-gradient( to right top, #d105af, #927fe4);
+    color: white;
+    font-family: pacifico;
+}
+
+#thanks {
+    /* display: none; */
+    margin-left: 150px;
+    width: 0;
+}
+
+
+/* ============ keyframe========== */
+
+
+/* === background== */
+
+@keyframes doimaubg {
+    0% {
+        background-image: linear-gradient( 135deg, rgba(161, 238, 193, 0.7), rgba(63, 90, 212, 0.7)), url(../images/bien.jpg);
+    }
+    50% {
+        background-image: linear-gradient( 135deg, rgba(230, 70, 144, 0.7), rgba(32, 31, 7, 0.7)), url(../images/bien.jpg);
+    }
+    100% {
+        background-image: linear-gradient( 135deg, rgba(253, 234, 234, 0.7), rgba(213, 224, 60, 0.7)), url(../images/bien.jpg);
+    }
+}
+
+
+/* == bac ho== */
+
+@keyframes bacho {
+    0% {
+        opacity: 0.1;
+        transform: scale(10);
+    }
+    90% {
+        opacity: 0.6;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* làm mờ */
+
+@keyframes lammo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* chuyển động */
+
+@keyframes chuyendong {
+    0% {
+        opacity: 0.5;
+        transform: translate(3000px, 0);
+    }
+    95% {
+        opacity: 0.6;
+        transform: translate(-300px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* lắc lư */
+
+@keyframes laclu {
+    0% {
+        transform: translate(-3px, 0);
+    }
+    10% {
+        transform: translate(3px, 0);
+    }
+    20% {
+        transform: translate(-3px, 0);
+    }
+    30% {
+        transform: translate(3px, 0);
+    }
+    40% {
+        transform: translate(-3px, 0);
+    }
+    50% {
+        transform: translate(3px, 0);
+    }
+    60% {
+        transform: translate(-3px, 0);
+    }
+    70% {
+        transform: translate(3px, 0);
+    }
+    80% {
+        transform: translate(-3px, 0);
+    }
+    90% {
+        transform: translate(3px, 0);
+    }
+    100% {
+        transform: translate(-3px, 0);
+    }
+}
+
+
+/* chuyển động 2 bên */
+
+@keyframes chuyendong2 {
+    0% {
+        opacity: 0.5;
+        transform: translate(-3000px, 0);
+    }
+    95% {
+        opacity: 0.6;
+        transform: translate(500px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* chuyển động rơi từ trên xuống */
+
+@keyframes roixuong {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, -3000px);
+    }
+    95% {
+        opacity: 0.6;
+        transform: translate(0, 500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/* chuyển động rơi từ dưới lên */
+
+@keyframes roixuong2 {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, -300px);
+    }
+    90% {
+        opacity: 0.6;
+        transform: translate(0, 500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+/*  nhấp nháy viền */
+
+@keyframes nhapnhay {
+    25% {
+        border-top: 5px solid rgb(133, 221, 17);
+    }
+    50% {
+        border-right: 5px solid rgb(14, 114, 207);
+    }
+    75% {
+        border-bottom: 5px solid rgb(236, 166, 101);
+    }
+    100% {
+        border-left: 5px solid rgb(233, 21, 67);
+    }
+}
+
+
+/* nghiêng chữ */
+
+@keyframes nghiengchu {
+    0% {
+        transform: rotate(-360deg);
+    }
+    85% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

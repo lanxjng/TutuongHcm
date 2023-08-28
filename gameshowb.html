@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html id='html' onmousedown="mouseDown()" onmouseup="mouseUp()" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP 1 THẾ GIỚI</title>
+    <link rel="stylesheet" href="font/font1.css">
+    <link rel="stylesheet" href="font/font2.css">
+    <link rel="stylesheet" href="css/noidung.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+</head>
+<audio id="emthich" src="mp3/gainhat.mp3"></audio>
+<audio id='bommp3'>
+    <source src="mp3/bommp3.mp3">
+</audio>
+<audio id='dungmp3'>
+    <source src="mp3/dung.mp3">
+</audio>
+<audio id='saimp3'>
+    <source src="mp3/sai.mp3">
+</audio>
+
+<body id="body" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+    <!-- phần trên -->
+    <div class="head">
+        <!-- các menu -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logocovietnam.jpg" alt="logo"></a>
+        </div>
+        <div class="link">
+            <ol>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="noidung.html">Nội Dung</a></li>
+                    <li><a href="gameshowb.html" style="color:#88fdab;">Game</a></li>
+                </ul>
+            </ol>
+        </div>
+    </div>
+    <div id="noidung" class="noidung">
+        <div id="link" class="link2">
+            <ol>
+                <ul>
+                    <li><a href="noidung.html">Tư Tưởng HCM Về CNXH</a></li>
+                    <li><a href="noidung2a.html" style="color:#000000;">Tư Tưởng HCM Về Xây Dựng CNXH Ở VN</a></li>
+                    <li><a href="noidung3a.html">Tư Tưởng HCM Về Thời Kỳ Quá Độ Lên CNXH Ở VN</a></li>
+                </ul>
+            </ol>
+        </div>
+    </div>
+
+    <div class="games">
+        <div class="game">
+            <ol>
+                <ul>
+                    <li><button onclick="B1()">J</button></li>
+                    <li><button onclick="B2()">Q</button></li>
+                    <li><button onclick="B3()">K</button></li>
+                </ul>
+            </ol>
+        </div>
+    </div>
+    <div id="dialog">
+
+        <button onclick="closetab()" id="exit">X</button>
+
+        <div>
+            <h1 id="cauhoi"></h1>
+        </div>
+        <div class="dialogs">
+            <div class="game">
+                <ol>
+                    <ul>
+                        <li id="a"><button id="btna" onclick="dapanA()">A</button><span id="luachona"></span></li>
+                        <li id="b"><button id="btnb" onclick="dapanB()">B</button><span id="luachonb"></span></li>
+                        <li id="c"><button id="btnc" onclick="dapanC()">C</button><span id="luachonc"></span></li>
+                        <li id="d"><button id="btnd" onclick="dapanD()">D</button><span id="luachond"></span></li>
+                    </ul>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+    <div id="dung" class="dung" onclick="nhandung()">
+        <img width="400" src="images/matbinh.png" alt="">
+        <h1>Ve ri gút!!! Chúc mừng bạn nhận được vật phẩm mới</h1>
+    </div>
+    <div id="sai" class="sai" onclick="nhansai()">
+        <img width="400" src="images/thanhsai.png" alt="">
+        <h1>Rất tiếc, Em đen lắm :))</h1>
+    </div>
+    <div class="mxh">
+        <ul class="social-share">
+            <li onclick="gotofb()" id="fb" class="social-item social-item--facebook">
+                <i class="fab fa-facebook-square"></i>
+            </li>
+            <li id="twitter" class="social-item social-item--twitter">
+                <i class="fab fa-twitter"></i>
+            </li>
+            <li id="tele" class="social-item social-item--telegram">
+                <i class="fab fa-telegram"></i>
+            </li>
+            <li id="linkedin" class="social-item social-item--linkedin">
+                <i class="fab fa-linkedin"></i>
+            </li>
+            <li id="instagram" class="social-item social-item--instagram">
+                <i class="fab fa-instagram"></i>
+            </li>
+            <li id="gg" class="social-item social-item--google">
+                <i class="fab fa-google"></i>
+            </li>
+            <li id="yt" class="social-item social-item--youtube">
+                <i class="fab fa-youtube"></i>
+        </ul>
+    </div>
+    <div id="chuong" class="chuongthongbao" onclick="showmess()">
+        <div id="chuongbell" class="bell-noti">
+            <i class="fa fa-bell bell-noti-icon"></i>
+            <div id="chuongstatus" class="bell-noti-status"></div>
+        </div>
+    </div>
+    <div class="time">
+        <ul class="countdown">
+            <li class="countdown-item"><span id="hour" class="countdown-number hours"></span></li>
+            <li class="countdown-item"><span id="padding" class="countdown-number padding">:</span></li>
+            <li class="countdown-item"><span id="minute" class="countdown-number minutes"></span></li>
+            <li class="countdown-item"><span id="padding" class="countdown-number padding">:</span></li>
+            <li class="countdown-item"><span id="second" class="countdown-number second"></span></li>
+        </ul>
+    </div>
+    </div>
+    <button onclick="topFunction()" id="scrTop" title="Go to top">▲</button>
+    <script src="js/bommouse.js"></script>
+    <script src="js/min.js"></script>
+    <script src="js/gameshow.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/scrolltop.js"></script>
+    <script src="js/laroi.js"></script>
+    <script>
+        function showmess() {
+            alert("ANH BÌNH YÊU TẤT CẢ CÁC CHỊ NGÔN NGỮ ANH ❤");
+        }
+
+        function gotofb() {
+            window.location.href = 'https://facebook.com/100029031824085';
+        }
+    </script>
+</body>
+
+</html>
