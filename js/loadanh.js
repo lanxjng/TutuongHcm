@@ -1,21 +1,19 @@
 var index = 0;
-var img = ['images/toi.png',
-    'images/huy.png', 'images/truong.png',
-    'images/tung.png', 'images/thanh.png',
-    'images/hoang.png', 'images/sang.png',
-    'images/hung.png', 'images/an.png',
-    'images/tuan.png', 'images/binh.PNG', 'images/hao.PNG'
+var img = ['images/khuong.png',
+    'images/ky.png', 'images/dat.png',
+    'images/nguyen.png', 'images/lan.png',
+    'images/chien.png', 'images/namhai.png',
+    'images/dangnam.png', 'images/mua.png'
 ];
-var listmp3 = ['mp3/toi.mp3',
-    'mp3/huy.mp3', 'mp3/truong.mp3', 'mp3/tung.mp3',
-    'mp3/thanh.mp3', 'mp3/hoang.mp3', 'mp3/sang.mp3',
-    'mp3/hung.mp3', 'mp3/an.mp3'
-];
-var listtext = ['Trùm Lươn', 'Trùm Tia Gái',
-    'Trùm Cơm Tróoo', 'Trùm XiaoLon',
-    'Trùm Dẹo', 'Trùm Đũy Đựk',
-    'Trùm Đi Muộn', 'Trùm Póng',
-    'Trùm VinCom', 'Trùm ĐB', 'Trùm Thang Máy', 'Trùm Ăn Hại'
+// var listmp3 = ['mp3/toi.mp3',
+//     'mp3/huy.mp3', 'mp3/truong.mp3', 'mp3/tung.mp3',
+//     'mp3/thanh.mp3', 'mp3/hoang.mp3', 'mp3/sang.mp3',
+//     'mp3/hung.mp3', 'mp3/an.mp3'
+//];
+var listtext = ['Trong vai: Đường Tam Tạng', 'Trong vai: Tôn Ngộ Không',
+    'Trong vai: Trư Bát Giới', 'Trong vai: Sa Ngộ Tĩnh',
+    'Trong vai: Nhện Tinh', 'Trong vai: Bạch Long Mã',
+    'Trong vai: Bồ Đề Tổ Sư', 'Trong vai: Ngưu Ma Vương', 'Trong vai: Bàn Cổ'
 ];
 var textshow = document.getElementById("textshow");
 //var binh = new Audio('mp3/binh.mp3').play();

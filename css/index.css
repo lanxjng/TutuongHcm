@@ -15,12 +15,12 @@ body {
 marquee {
     position: absolute;
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    font-family: cursive;
+    color: rgb(250, 249, 249);
     width: 100%;
     margin-top: 10px;
     font-weight: bold;
-    text-shadow: rgb(0, 0, 233) -1px -2px 0.5em;
+    text-shadow: rgb(7, 64, 198) -1px -2px 0.2em;
 }
 
 
@@ -28,7 +28,7 @@ marquee {
 
 .head {
     /* background-image: linear-gradient( 135deg, rgba(0, 0, 0, 0.7), rgba(253, 240, 55, 0.7)); */
-    background-image: linear-gradient( to right, #5dcff1, #6b12df);
+    background-image: linear-gradient( to right, rgb(251, 131, 151), rgb(134, 134, 251));
     width: 100%;
     height: 7%;
     margin: auto;
@@ -101,7 +101,7 @@ marquee {
 /* background trang */
 
 .center {
-    background: url(../images/bien.jpg);
+    background: url(../images/anh5.jpg);
     /* background: url(../images/bghoasen3.jpg); */
     /* background-image: linear-gradient( to right bottom, #FE0C6B, #29055E); */
     background-position: center;
@@ -173,9 +173,9 @@ marquee {
 .text2 {
     width: 30%;
     height: 50%;
-    font-size: 12px;
+    font-size: 13px;
     position: absolute;
-    top: 30%;
+    top: 20%;
     font-family: pacifico;
     z-index: 1;
 }
@@ -321,11 +321,11 @@ select {
 }
 
 .social-item--facebook {
-    background-color: #3b5999;
+    background-color: #648bdd;
 }
 
 .social-item--twitter {
-    background-color: #55acee;
+    background-color: #90c6f0;
 }
 
 .social-item--telegram {
@@ -333,11 +333,11 @@ select {
 }
 
 .social-item--linkedin {
-    background-color: #007ee5;
+    background-color: #0968b6;
 }
 
 .social-item--instagram {
-    background-color: #ff009d;
+    background-color: #f680bf;
 }
 
 .social-item--google {
@@ -345,7 +345,7 @@ select {
 }
 
 .social-item--youtube {
-    background-color: #ff0000;
+    background-color: #c50808;
 }
 
 .mxh {
@@ -411,7 +411,7 @@ select {
 }
 
 .hoasen img {
-    max-width: 150px;
+    max-width: 100px;
 }
 
 
@@ -452,16 +452,19 @@ select {
 
 @keyframes changebg {
     0% {
-        background-image: url(../images/bien.jpg);
+        background-image: url(../images/anh5.jpg);
+    }
+    15% {
+        background-image: url(../images/anh1.jpg);
     }
     35% {
-        background-image: url(../images/bghoasen.jpg);
+        background-image: url(../images/anh2.jpg);
     }
     55% {
-        background-image: url(../images/bien2.jpg);
+        background-image: url(../images/anh3.jpg);
     }
     75% {
-        background-image: url(../images/bghoasen4.jpg);
+        background-image: url(../images/anh4.jpg);
     }
 }
 
